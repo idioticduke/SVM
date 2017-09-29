@@ -55,6 +55,6 @@ def smoSimple(dataMatIn, classLabels, C, toler, maxIter):
         print ("iteration number: %d" % iter)
     return b,alphas
 
-dataArr,labelArr = helper.loadDataSet('F:/计算机/machinelearninginaction随书源代码/Ch06/testSet.txt')
+dataArr,labelArr = helper.loadDataSet('testSet.txt')
 b,alphas = smoSimple(dataArr, labelArr, 0.6, 0.001, 40)
 print (alphas[alphas>0])
