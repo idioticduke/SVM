@@ -66,6 +66,6 @@ def smoP(dataMatIn, classLabels, C, toler, maxIter, kTup=('lin', 0)):
         print ("iteration number: %d" % iter)
     return oS.b,oS.alphas
 
-dataArr,labelArr = helper.loadDataSet('F:/计算机/machinelearninginaction随书源代码/Ch06/testSet.txt')
+dataArr,labelArr = helper.loadDataSet('testSet.txt')
 b,alphas = smoP(dataArr, labelArr, 0.6, 0.001, 40)
 print (b,alphas[alphas>0])
